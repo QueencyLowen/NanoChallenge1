@@ -16,6 +16,12 @@
 		5098E0B22817DEDF00E30F9A /* Nano_Challenge_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098E0B12817DEDF00E30F9A /* Nano_Challenge_1Tests.swift */; };
 		5098E0BC2817DEDF00E30F9A /* Nano_Challenge_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098E0BB2817DEDF00E30F9A /* Nano_Challenge_1UITests.swift */; };
 		5098E0BE2817DEDF00E30F9A /* Nano_Challenge_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098E0BD2817DEDF00E30F9A /* Nano_Challenge_1UITestsLaunchTests.swift */; };
+		50DC3A98281BD57000F9706C /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DC3A97281BD57000F9706C /* GoodsViewController.swift */; };
+		50F5685E281A7CCB00E330E0 /* TripSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F5685D281A7CCB00E330E0 /* TripSummaryViewController.swift */; };
+		50F56860281A848900E330E0 /* LocationDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F5685F281A848900E330E0 /* LocationDateViewController.swift */; };
+		50F56864281ACC6F00E330E0 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F56863281ACC6F00E330E0 /* PeopleViewController.swift */; };
+		50F56866281ADA3B00E330E0 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F56865281ADA3B00E330E0 /* ActivityViewController.swift */; };
+		50F56868281B071200E330E0 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F56867281B071200E330E0 /* FoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5098E0B72817DEDF00E30F9A /* Nano Challenge 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nano Challenge 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5098E0BB2817DEDF00E30F9A /* Nano_Challenge_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_1UITests.swift; sourceTree = "<group>"; };
 		5098E0BD2817DEDF00E30F9A /* Nano_Challenge_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50DC3A97281BD57000F9706C /* GoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
+		50F5685D281A7CCB00E330E0 /* TripSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSummaryViewController.swift; sourceTree = "<group>"; };
+		50F5685F281A848900E330E0 /* LocationDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDateViewController.swift; sourceTree = "<group>"; };
+		50F56863281ACC6F00E330E0 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		50F56865281ADA3B00E330E0 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		50F56867281B071200E330E0 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,12 @@
 				5098E0A32817DEDE00E30F9A /* Assets.xcassets */,
 				5098E0A52817DEDE00E30F9A /* LaunchScreen.storyboard */,
 				5098E0A82817DEDE00E30F9A /* Info.plist */,
+				50F5685D281A7CCB00E330E0 /* TripSummaryViewController.swift */,
+				50F5685F281A848900E330E0 /* LocationDateViewController.swift */,
+				50F56863281ACC6F00E330E0 /* PeopleViewController.swift */,
+				50F56865281ADA3B00E330E0 /* ActivityViewController.swift */,
+				50F56867281B071200E330E0 /* FoodViewController.swift */,
+				50DC3A97281BD57000F9706C /* GoodsViewController.swift */,
 			);
 			path = "Nano Challenge 1";
 			sourceTree = "<group>";
@@ -260,7 +278,13 @@
 			files = (
 				5098E09F2817DEDC00E30F9A /* ViewController.swift in Sources */,
 				5098E09B2817DEDC00E30F9A /* AppDelegate.swift in Sources */,
+				50DC3A98281BD57000F9706C /* GoodsViewController.swift in Sources */,
+				50F56868281B071200E330E0 /* FoodViewController.swift in Sources */,
+				50F56860281A848900E330E0 /* LocationDateViewController.swift in Sources */,
+				50F5685E281A7CCB00E330E0 /* TripSummaryViewController.swift in Sources */,
+				50F56866281ADA3B00E330E0 /* ActivityViewController.swift in Sources */,
 				5098E09D2817DEDC00E30F9A /* SceneDelegate.swift in Sources */,
+				50F56864281ACC6F00E330E0 /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
