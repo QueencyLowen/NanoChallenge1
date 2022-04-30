@@ -435,7 +435,7 @@
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Rku-m4-geg">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.14000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Rku-m4-geg">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="2sr-yy-t4g"/>
@@ -651,7 +651,7 @@ location, date and time for this entry!</string>
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-1I-ChR">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.28999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-1I-ChR">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="Pge-f2-SWW"/>
@@ -760,9 +760,6 @@ location, date and time for this entry!</string>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <textInputTraits key="textInputTraits"/>
-                                            <connections>
-                                                <action selector="buddiesTF:" destination="h0E-VT-ArJ" eventType="editingDidEnd" id="oLf-IN-yW5"/>
-                                            </connections>
                                         </textField>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LKk-Q2-D1o">
                                             <rect key="frame" x="344" y="276.5" width="21" height="18.5"/>
@@ -978,7 +975,7 @@ location, date and time for this entry!</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-J1-HMi">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.42999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-J1-HMi">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="8NF-X8-QNP"/>
@@ -1015,10 +1012,11 @@ location, date and time for this entry!</string>
                     </view>
                     <navigationItem key="navigationItem" id="aKu-cf-dXI"/>
                     <connections>
+                        <outlet property="addBtn" destination="a9b-sL-kbE" id="hR9-lu-Djy"/>
                         <outlet property="buddiesLabel" destination="rvi-0F-v7I" id="h6A-VG-5ta"/>
                         <outlet property="buddiesPhoto1" destination="ASl-z1-zzx" id="okp-wi-vwN"/>
                         <outlet property="buddiesPhoto2" destination="zAv-Jr-XJ5" id="jmP-6M-kcq"/>
-                        <outlet property="buddiesTF" destination="Apm-Hq-9uF" id="fG5-is-gN7"/>
+                        <outlet property="buddiesTF" destination="Apm-Hq-9uF" id="Fwb-Kq-Mvg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycP-TG-SKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1291,7 +1289,7 @@ location, date and time for this entry!</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d08-0o-zGq">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.56999999999999995" translatesAutoresizingMaskIntoConstraints="NO" id="d08-0o-zGq">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="eQH-4Y-13w"/>
@@ -1544,7 +1542,7 @@ location, date and time for this entry!</string>
                                     <constraint firstItem="b5K-mi-wiV" firstAttribute="centerY" secondItem="X0Z-Wv-aPy" secondAttribute="centerY" id="Lgu-3h-V0v"/>
                                 </constraints>
                             </stackView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-zb-JB6">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-zb-JB6">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="29N-Io-veF"/>
@@ -1900,10 +1898,10 @@ in this trip?</string>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mUX-Uc-qAk" kind="show" id="T1c-hN-5p4"/>
+                                    <segue destination="mUX-Uc-qAk" kind="show" id="iYa-dj-cmN"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-R2-cor">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="qLL-R2-cor">
                                 <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="e8n-cb-o1y"/>
@@ -1923,10 +1921,10 @@ in this trip?</string>
                             <constraint firstItem="dSg-hm-Q0I" firstAttribute="bottom" secondItem="Dox-gb-fPl" secondAttribute="bottom" id="LH5-dc-m4R"/>
                             <constraint firstAttribute="trailing" secondItem="7bI-7J-j4U" secondAttribute="trailing" constant="40" id="QeO-a5-gsS"/>
                             <constraint firstItem="65z-v9-xZX" firstAttribute="trailing" secondItem="dQr-ow-h7x" secondAttribute="trailing" constant="20" id="Qxj-dM-3pi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7bI-7J-j4U" secondAttribute="bottom" constant="30" id="S9N-GK-vOH"/>
                             <constraint firstItem="65z-v9-xZX" firstAttribute="bottom" secondItem="NYS-eC-WxH" secondAttribute="bottom" constant="30" id="SDL-cz-37Z"/>
                             <constraint firstItem="65z-v9-xZX" firstAttribute="trailing" secondItem="qLL-R2-cor" secondAttribute="trailing" constant="40" id="Snc-8h-1wE"/>
                             <constraint firstItem="qLL-R2-cor" firstAttribute="top" secondItem="65z-v9-xZX" secondAttribute="top" id="Vlj-Wr-HIC"/>
-                            <constraint firstItem="65z-v9-xZX" firstAttribute="bottom" secondItem="7bI-7J-j4U" secondAttribute="bottom" constant="30" id="Vzt-93-Vtu"/>
                             <constraint firstItem="dSg-hm-Q0I" firstAttribute="top" secondItem="RHD-Dg-dmq" secondAttribute="top" id="WFd-8u-jNn"/>
                             <constraint firstItem="DCt-Br-Xrz" firstAttribute="trailing" secondItem="qLL-R2-cor" secondAttribute="trailing" id="Wl1-xf-Act"/>
                             <constraint firstItem="dQr-ow-h7x" firstAttribute="leading" secondItem="65z-v9-xZX" secondAttribute="leading" constant="20" id="fKz-pN-bnB"/>
@@ -1957,12 +1955,6 @@ in this trip?</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alessio-soggetti-zxcBR3zNc7I-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="V1G-B1-PgU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="41w-RF-Aly">
-                                <rect key="frame" x="40" y="88" width="334" height="4"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="4" id="oeu-bn-s4g"/>
-                                </constraints>
-                            </progressView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-Il-8PT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1971,21 +1963,21 @@ in this trip?</string>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-rh-Or7">
-                                            <rect key="frame" x="40" y="334" width="272.5" height="100.5"/>
+                                            <rect key="frame" x="40" y="334" width="295.5" height="100.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100.5" id="KH1-lV-NIP"/>
                                             </constraints>
                                             <string key="text">At the end of the day,
 How many stars would
 you give to this trip?</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="977-sI-gBf">
                                             <rect key="frame" x="40" y="454.5" width="235" height="42"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" name="AccentColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="42" id="f8j-2x-SkL"/>
                                                 <constraint firstAttribute="width" constant="235" id="yl9-m4-5DU"/>
@@ -2009,7 +2001,7 @@ you give to this trip?</string>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
-                                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
@@ -2027,53 +2019,60 @@ you give to this trip?</string>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-LS-oPM">
+                                            <rect key="frame" x="40" y="756" width="35" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="VYs-m6-4xV"/>
+                                                <constraint firstAttribute="width" constant="35" id="cGB-ss-c6c"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <imageReference key="image" image="arrow.left" catalog="system" symbolScale="default"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backBtn:" destination="PSm-F6-1wl" eventType="touchUpInside" id="4kR-2X-KZA"/>
+                                                <action selector="backBtn:" destination="xzW-xh-NbS" eventType="touchUpInside" id="Bxc-oG-66c"/>
+                                                <action selector="backBtn:" destination="HpA-oM-dL3" eventType="touchUpInside" id="JFD-V4-4Js"/>
+                                                <action selector="backBtn:" destination="mUX-Uc-qAk" eventType="touchUpInside" id="O7d-hM-pL2"/>
+                                                <action selector="backBtn:" destination="HbI-Kk-7tg" eventType="touchUpInside" id="ZVI-wm-Bpz"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="LB3-LS-oPM" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="4Fn-Lk-B3r"/>
                                         <constraint firstItem="9Yi-rh-Or7" firstAttribute="top" secondItem="wHB-A5-ehs" secondAttribute="top" constant="334" id="D4P-Ns-vFr"/>
                                         <constraint firstItem="9Yi-rh-Or7" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="Jr2-Hp-InP"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Yi-rh-Or7" secondAttribute="trailing" constant="20" symbolic="YES" id="bFW-5b-GTR"/>
                                         <constraint firstItem="977-sI-gBf" firstAttribute="top" secondItem="9Yi-rh-Or7" secondAttribute="bottom" constant="20" id="bbl-Ff-4Sz"/>
                                         <constraint firstAttribute="trailing" secondItem="977-sI-gBf" secondAttribute="trailing" constant="40" id="sJi-sb-FNZ"/>
                                         <constraint firstItem="977-sI-gBf" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="wa4-eq-uhD"/>
+                                        <constraint firstAttribute="bottom" secondItem="LB3-LS-oPM" secondAttribute="bottom" constant="110" id="yEt-nr-YTD"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-LS-oPM">
-                                <rect key="frame" x="40" y="753" width="35" height="30"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="41w-RF-Aly">
+                                <rect key="frame" x="40" y="88" width="334" height="4"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="VYs-m6-4xV"/>
-                                    <constraint firstAttribute="width" constant="35" id="cGB-ss-c6c"/>
+                                    <constraint firstAttribute="height" constant="4" id="oeu-bn-s4g"/>
                                 </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal">
-                                    <imageReference key="image" image="arrow.left" catalog="system" symbolScale="default"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                                <connections>
-                                    <action selector="backBtn:" destination="PSm-F6-1wl" eventType="touchUpInside" id="4kR-2X-KZA"/>
-                                    <action selector="backBtn:" destination="xzW-xh-NbS" eventType="touchUpInside" id="Bxc-oG-66c"/>
-                                    <action selector="backBtn:" destination="HpA-oM-dL3" eventType="touchUpInside" id="JFD-V4-4Js"/>
-                                    <action selector="backBtn:" destination="mUX-Uc-qAk" eventType="touchUpInside" id="O7d-hM-pL2"/>
-                                    <action selector="backBtn:" destination="HbI-Kk-7tg" eventType="touchUpInside" id="ZVI-wm-Bpz"/>
-                                </connections>
-                            </button>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XSq-rK-Tfx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XSq-rK-Tfx" firstAttribute="trailing" secondItem="41w-RF-Aly" secondAttribute="trailing" constant="40" id="9w3-8W-HML"/>
                             <constraint firstItem="41w-RF-Aly" firstAttribute="top" secondItem="XSq-rK-Tfx" secondAttribute="top" id="9wW-LS-fdG"/>
-                            <constraint firstItem="XSq-rK-Tfx" firstAttribute="bottom" secondItem="LB3-LS-oPM" secondAttribute="bottom" constant="30" id="XpD-4W-npk"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="leading" secondItem="XSq-rK-Tfx" secondAttribute="leading" id="ezm-XJ-zbX"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="top" secondItem="oML-Ee-cFp" secondAttribute="top" id="fq6-sc-2kj"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="trailing" secondItem="XSq-rK-Tfx" secondAttribute="trailing" id="ggJ-Jv-JUN"/>
-                            <constraint firstItem="LB3-LS-oPM" firstAttribute="leading" secondItem="XSq-rK-Tfx" secondAttribute="leading" constant="40" id="hfC-OH-4hL"/>
                             <constraint firstItem="41w-RF-Aly" firstAttribute="leading" secondItem="XSq-rK-Tfx" secondAttribute="leading" constant="40" id="jvc-cK-Wjb"/>
                             <constraint firstAttribute="bottom" secondItem="V1G-B1-PgU" secondAttribute="bottom" id="spw-2a-nl8"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="26I-LV-hGb"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ratingCollectionView" destination="977-sI-gBf" id="FKL-mH-T7H"/>
@@ -2126,6 +2125,9 @@ you give to this trip?</string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

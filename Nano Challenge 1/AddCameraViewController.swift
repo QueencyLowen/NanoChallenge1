@@ -9,92 +9,13 @@ import UIKit
 
 class AddCameraViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    @IBOutlet weak var olstar1: UIButton!
-    @IBOutlet weak var olstar2: UIButton!
-    @IBOutlet weak var olstar3: UIButton!
-    @IBOutlet weak var olstar4: UIButton!
-    @IBOutlet weak var olstar5: UIButton!
     @IBOutlet weak var RatingCollectionViewCell: UICollectionViewCell!
-
-    
-    
     
     var starPressed = false
     
     @IBOutlet weak var ratingCollectionView: UICollectionView!
     var data: [Bool] = [false,false,false,false,false]
     var flag : Int = 0
-    
-    @IBAction func starPressed(_ sender: UIButton) {
-        if starPressed == true {
-            olstar1.setImage(UIImage(systemName: "star"), for: .normal)
-            starPressed = false
-        } else {
-            olstar1.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            starPressed = true
-        }
-    }
-    
-    @IBAction func starPressed2(_ sender: UIButton) {
-        if starPressed == true {
-            olstar1.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star"), for: .normal)
-            starPressed = false
-        } else {
-            olstar1.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            starPressed = true
-        }
-    }
-    
-    @IBAction func starPressed3(_ sender: UIButton) {
-        if starPressed == true {
-            olstar1.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star"), for: .normal)
-            starPressed = false
-        } else {
-            olstar1.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            starPressed = true
-        }
-    }
-    
-    @IBAction func starPressed4(_ sender: UIButton) {
-        if starPressed == true {
-            olstar1.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar4.setImage(UIImage(systemName: "star"), for: .normal)
-            starPressed = false
-        } else {
-            olstar1.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar4.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            starPressed = true
-        }
-    }
-    
-    @IBAction func starPressed5(_ sender: UIButton) {
-        if starPressed == true {
-            olstar1.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar4.setImage(UIImage(systemName: "star"), for: .normal)
-            olstar5.setImage(UIImage(systemName: "star"), for: .normal)
-            starPressed = false
-        } else {
-            olstar1.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar2.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar3.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar4.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            olstar5.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            starPressed = true
-        }
-
-    }
     
     
     override func viewWillAppear(_ animated: Bool) {

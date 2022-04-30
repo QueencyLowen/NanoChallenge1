@@ -9,10 +9,13 @@ import UIKit
 
 class PeopleViewController: UIViewController {
 
-    @IBOutlet weak var buddiesTF: UITextField!
+   
     @IBOutlet weak var buddiesPhoto1: UIImageView!
     @IBOutlet weak var buddiesPhoto2: UIImageView!
     @IBOutlet weak var buddiesLabel: UILabel!
+    @IBOutlet weak var buddiesTF: UITextField!
+    @IBOutlet weak var addBtn: UIButton!
+    
     
     var inputBuddies: [String] = []
     
@@ -20,7 +23,7 @@ class PeopleViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
     }
  
-    @IBAction func addBtn(_ sender: Any) {
+    @IBAction func addBtn(_ sender: UIButton) {
         inputBuddies.append(buddiesTF.text ?? "Blank")
         buddiesTF.text = ""
         var penampungSementara:String = ""
