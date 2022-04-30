@@ -9,8 +9,8 @@ import UIKit
 
 class GoodsViewController: UIViewController {
 
-    @IBOutlet weak var goodsTF: UITextField!
     @IBOutlet weak var ssgoodsTF: UITextField!
+    @IBOutlet weak var goodsTF: UITextField!
     
     
     override func viewWillAppear(_ animated: Bool) {

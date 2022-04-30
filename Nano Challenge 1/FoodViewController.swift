@@ -13,6 +13,9 @@ class FoodViewController: UIViewController {
     @IBOutlet weak var foodTF: UITextField!
     @IBOutlet weak var ssfoodTF: UITextField!
     @IBOutlet weak var containerfoodsTF: UITextField!
+    @IBOutlet weak var foodLabel: UILabel!
+    
+    var inputFood: [String] = []
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.hidesBackButton = true
@@ -45,9 +48,21 @@ class FoodViewController: UIViewController {
             foodDropDown.changesSelectionAsPrimaryAction = true
         }
     
+    
+    @IBAction func addBtn(_ sender: Any) {
+        inputFood.append(foodTF.text ?? "Blank")
+        foodTF.text = ""
+        var penampungSementara:String = ""
+        for name in inputFood {penampungSementara =
+            "\(penampungSementara)   \(name)   "
+        }
+        foodLabel.text = penampungSementara
+    }
+    
     @IBAction func backBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     
     /*
     // MARK: - Navigation
