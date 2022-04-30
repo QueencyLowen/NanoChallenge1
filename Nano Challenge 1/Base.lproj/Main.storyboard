@@ -2038,6 +2038,20 @@ you give to this trip?</string>
                                                 <action selector="backBtn:" destination="HbI-Kk-7tg" eventType="touchUpInside" id="ZVI-wm-Bpz"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGq-5I-CB6">
+                                            <rect key="frame" x="224" y="746" width="150" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="14S-Az-EZ9"/>
+                                                <constraint firstAttribute="height" constant="50" id="Jqx-HU-O4q"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" title="Submit" cornerStyle="capsule">
+                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Kvi-rm-3G8"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="LB3-LS-oPM" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="4Fn-Lk-B3r"/>
@@ -2045,8 +2059,10 @@ you give to this trip?</string>
                                         <constraint firstItem="9Yi-rh-Or7" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="Jr2-Hp-InP"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Yi-rh-Or7" secondAttribute="trailing" constant="20" symbolic="YES" id="bFW-5b-GTR"/>
                                         <constraint firstItem="977-sI-gBf" firstAttribute="top" secondItem="9Yi-rh-Or7" secondAttribute="bottom" constant="20" id="bbl-Ff-4Sz"/>
+                                        <constraint firstItem="CGq-5I-CB6" firstAttribute="centerY" secondItem="LB3-LS-oPM" secondAttribute="centerY" id="e1j-j1-OQ0"/>
                                         <constraint firstAttribute="trailing" secondItem="977-sI-gBf" secondAttribute="trailing" constant="40" id="sJi-sb-FNZ"/>
                                         <constraint firstItem="977-sI-gBf" firstAttribute="leading" secondItem="wHB-A5-ehs" secondAttribute="leading" constant="40" id="wa4-eq-uhD"/>
+                                        <constraint firstItem="CGq-5I-CB6" firstAttribute="top" secondItem="977-sI-gBf" secondAttribute="bottom" constant="249.5" id="xmE-lv-wrA"/>
                                         <constraint firstAttribute="bottom" secondItem="LB3-LS-oPM" secondAttribute="bottom" constant="110" id="yEt-nr-YTD"/>
                                     </constraints>
                                 </view>
@@ -2064,6 +2080,7 @@ you give to this trip?</string>
                         <constraints>
                             <constraint firstItem="XSq-rK-Tfx" firstAttribute="trailing" secondItem="41w-RF-Aly" secondAttribute="trailing" constant="40" id="9w3-8W-HML"/>
                             <constraint firstItem="41w-RF-Aly" firstAttribute="top" secondItem="XSq-rK-Tfx" secondAttribute="top" id="9wW-LS-fdG"/>
+                            <constraint firstItem="CGq-5I-CB6" firstAttribute="trailing" secondItem="41w-RF-Aly" secondAttribute="trailing" id="Xmu-EE-W32"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="leading" secondItem="XSq-rK-Tfx" secondAttribute="leading" id="ezm-XJ-zbX"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="top" secondItem="oML-Ee-cFp" secondAttribute="top" id="fq6-sc-2kj"/>
                             <constraint firstItem="V1G-B1-PgU" firstAttribute="trailing" secondItem="XSq-rK-Tfx" secondAttribute="trailing" id="ggJ-Jv-JUN"/>
@@ -2101,6 +2118,9 @@ you give to this trip?</string>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tim-rs-UJs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Gradient" width="390" height="844"/>
         <image name="alessio-soggetti-zxcBR3zNc7I-unsplash" width="6016" height="4016"/>
